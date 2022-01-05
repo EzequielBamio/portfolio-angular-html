@@ -1,0 +1,11 @@
+<div class="ae-grid au-xs-ta-center au-mb-4">
+
+    <div *ngFor="let person of _service.team" class="ae-grid__item item-lg-4 ae-kappa au-mb-3 animate__animated animate__fadeIn">
+        <img [src]="person.url" alt="" class="au-mb-3">
+        <!-- <img src="{{ person.url }}" alt="" class="au-mb-3"> -->
+        <h5 class="ae-u-bolder au-mt-2">{{ person.name }}</h5>
+        <p class="ae-u-bolder au-mb-3">{{ person.title }}</p>
+        <p class="au-lg-ta-left au-mb-3 au-pl-4 au-pr-4">{{ person.quotes }}</p><a href="#0" class="ae-u-bolder au-underline">{{ person.twitter }}</a>
+    </div>
+
+</div>
